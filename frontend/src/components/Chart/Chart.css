@@ -1,0 +1,117 @@
+.main-chart-container {
+  width: 100%;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.chart-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.chart-title-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.view-link {
+  color: #10b981;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.chart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-symbol {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.chart-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.chart-change {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chart-change.positive {
+  color: #10b981;
+}
+
+.chart-change.negative {
+  color: #ef4444;
+}
+
+.period-selector {
+  display: flex;
+  gap: 8px;
+  background: #f3f4f6;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.period-btn {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.period-btn:hover {
+  background: #e5e7eb;
+}
+
+.period-btn.active {
+  background: #10b981;
+  color: white;
+}
+
+.chart-wrapper {
+  margin-top: 16px;
+}
+
+.chart-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .chart-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .period-selector {
+    justify-content: center;
+  }
+}

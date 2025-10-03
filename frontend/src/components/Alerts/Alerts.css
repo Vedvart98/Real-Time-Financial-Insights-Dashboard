@@ -1,0 +1,120 @@
+.alert{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-alert {
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 24px 32px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-alert input,
+.add-alert select {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+  margin-right: 8px;
+}
+
+.add-alert input:focus,
+.add-alert select:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.add-alert button {
+  background: linear-gradient(90deg, #3182ce 0%, #00b4d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+  transition: background 0.2s;
+}
+
+.add-alert button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0096c7 100%);
+}
+
+.alerts-list {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 24px 32px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.alerts-list h3 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  color: #2d3748;
+}
+
+.alerts-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alerts-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+}
+
+.alerts-list li:hover {
+  box-shadow: 0 4px 12px rgba(49,130,206,0.12);
+}
+
+.alerts-list li > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.alerts-list span {
+  font-weight: 500;
+  color: #2563eb;
+}
+
+.alerts-list button {
+  background: #e2e8f0;
+  color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  margin-left: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.alerts-list button:hover {
+  background: #2563eb;
+  color: #fff;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

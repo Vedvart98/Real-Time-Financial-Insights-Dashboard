@@ -1,0 +1,117 @@
+/* Navbar.css */
+
+.navbar {
+  width: 95%;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 0 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+}
+
+.links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.links a:hover, .links a.active {
+  color: #00b4d8;
+  border-bottom: 2px solid #00b4d8;
+}
+
+.authenticate {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.user button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.user button:hover {
+  background: #f1f5f9;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(49,130,206,0.13);
+  border-radius: 10px;
+  min-width: 150px;
+  z-index: 200;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.dropdown-menu a,
+.dropdown-menu p {
+  color: #2563eb;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu p:hover {
+  background: #f1f5f9;
+  color: #00b4d8;
+}
+
+.login button {
+  background: linear-gradient(90deg, #3182ce 0%, #00b4d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+  transition: background 0.2s;
+}
+
+.login button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0096c7 100%);
+}

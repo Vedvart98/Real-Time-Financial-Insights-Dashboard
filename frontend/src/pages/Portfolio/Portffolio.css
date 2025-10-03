@@ -1,0 +1,112 @@
+.portfolio {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+  padding: 32px 40px;
+  width: 100%;
+  margin: 36px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portfolio h2 {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.add-asset {
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 18px 28px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.add-asset input {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.add-asset input:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.add-asset button {
+  background: linear-gradient(90deg, #3182ce 0%, #00b4d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+  transition: background 0.2s;
+}
+
+.add-asset button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0096c7 100%);
+}
+
+.portfolio-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.portfolio-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8fafc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(49,130,206,0.07);
+}
+
+.portfolio-table th, .portfolio-table td {
+  padding: 12px 18px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.portfolio-table th {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 500;
+}
+
+.portfolio-table tr {
+  transition: background 0.2s;
+}
+
+.portfolio-table tr:hover {
+  background: #e0f7fa;
+}
+
+.portfolio-table td button {
+  background: #e2e8f0;
+  color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.portfolio-table td button:hover {
+  background: #2563eb;
+  color: #fff;
+}
